@@ -1,0 +1,13 @@
+curl -X POST \
+     -H 'X-Amz-Target: AWSCognitoIdentityProviderService.RespondToAuthChallenge' \
+     -H 'Content-Type: application/x-amz-json-1.1' \
+  -d '{
+    "ChallengeName": "NEW_PASSWORD_REQUIRED",
+    "ChallengeResponses": {
+        "USERNAME": "myuser",
+        "NEW_PASSWORD": "321qweASD#"
+    },
+    "ClientId": "XXX",
+    "Session": "XXX"
+    }' \
+https://cognito-idp.eu-central-1.amazonaws.com/

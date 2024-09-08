@@ -1,0 +1,3 @@
+curl -X GET "XXX/hello" \
+     -H "Authorization: Bearer XXX" \
+     -H "Content-Type: application/json"

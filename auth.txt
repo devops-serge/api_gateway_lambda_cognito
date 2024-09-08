@@ -1,0 +1,12 @@
+curl -X POST \
+     -H 'X-Amz-Target: AWSCognitoIdentityProviderService.InitiateAuth' \
+     -H 'Content-Type: application/x-amz-json-1.1' \
+  -d '{
+        "AuthParameters" : {
+            "USERNAME" : "myuser",
+            "PASSWORD" : "123qweASD#"
+        },
+        "AuthFlow" : "USER_PASSWORD_AUTH",
+        "ClientId" : "XXX"
+      }' \
+https://cognito-idp.eu-central-1.amazonaws.com/
